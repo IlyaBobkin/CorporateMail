@@ -20,6 +20,14 @@ namespace kurs4sem
     {
         private bool connected = false;
         private Thread client = null;
+
+        private struct Mail
+        {
+            public string msg;
+            public string who;
+            public string theme;
+        }
+
         private struct MyClient
         {
             public long id;
@@ -332,18 +340,23 @@ namespace kurs4sem
 
         private void sendmailbtn_Click(object sender, EventArgs e)
         {
-                    if (textBox1.Text.Length > 0)
+                    if (textBox1.Text.Length > 0 && WhotextBox.Text.Length > 0 && ThemetextBox.Text.Length > 0)
                     {
                         string msg = textBox1.Text;
+                        string who = WhotextBox.Text;
+                        string theme = ThemetextBox.Text;
                         textBox1.Clear();
                         Log(string.Format("{0} (You): {1}", obj.username, msg));
                         if (connected)
                         {
-                            Send(msg);
+                            Mail mail = new Mail();
+                            mail.msg = msg;
+                            mail.who = who;
+                            mail.theme = theme;
+                            JavaScriptSerializer json = new JavaScriptSerializer(); // feel free to use JSON serializer
+                            Send(json.Serialize(mail));
                         }
                     }
-                
-            
         }
 
 
