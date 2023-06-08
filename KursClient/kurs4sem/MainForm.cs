@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,8 @@ namespace kurs4sem
         private Thread client = null;
         private struct MyClient
         {
+            public long id;
+            public string key;
             public string username;
             public TcpClient client;
             public NetworkStream stream;
@@ -28,6 +31,8 @@ namespace kurs4sem
             public StringBuilder data;
             public EventWaitHandle handle;
         };
+        private ConcurrentDictionary<long, MyClient> clients = new ConcurrentDictionary<long, MyClient>();
+
         private MyClient obj;
         private Task send = null;
         private bool exit = false;
@@ -141,6 +146,8 @@ namespace kurs4sem
                         {
                             Connected(true);
                         }
+                        obj.data.Clear();
+                        obj.handle.Set();
                     }
                 }
                 catch (Exception ex)
@@ -206,10 +213,12 @@ namespace kurs4sem
             bool success = false;
             Dictionary<string, string> data = new Dictionary<string, string>();
             data.Add("username", obj.username);
+            data.Add("key", obj.key);
             JavaScriptSerializer json = new JavaScriptSerializer(); // feel free to use JSON serializer
             Send(json.Serialize(data));
             while (obj.client.Connected)
             {
+                AddToGrid(obj.id, obj.username.ToString());
                 try
                 {
                     obj.stream.BeginRead(obj.buffer, 0, obj.buffer.Length, new AsyncCallback(ReadAuth), null);
@@ -336,5 +345,50 @@ namespace kurs4sem
                 
             
         }
+
+
+        ///////// grid 
+        ///
+
+        private void AddToGrid(long id, string name)
+        {
+            if (!exit)
+            {
+                mailDataGridView.Invoke((MethodInvoker)delegate
+                {
+                    string[] row = new string[] { id.ToString(), name };
+                    mailDataGridView.Rows.Add(row);
+                    totalLabel.Text = string.Format("Всего писем: {0}", mailDataGridView.Rows.Count);
+                });
+            }
+        }
+
+        private void RemoveFromGrid(long id)
+        {
+
+                mailDataGridView.Invoke((MethodInvoker)delegate
+                {
+                    foreach (DataGridViewRow row in mailDataGridView.Rows)
+                    {
+                        if (row.Cells["identifier"].Value.ToString() == id.ToString())
+                        {
+                            mailDataGridView.Rows.RemoveAt(row.Index);
+                            break;
+                        }
+                    }
+                    totalLabel.Text = string.Format("Всего писем: {0}", mailDataGridView.Rows.Count);
+                });
+        }
+
+        private void ClientsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == mailDataGridView.Columns["dc"].Index)
+            {
+                long.TryParse(mailDataGridView.Rows[e.RowIndex].Cells["identifier"].Value.ToString(), out long id);
+                clients.TryGetValue(id, out MyClient obj);
+                RemoveFromGrid(obj.id);
+            }
+        }
+
     }
 }
