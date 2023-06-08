@@ -1,0 +1,22 @@
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\bin\Debug\Server.exe.config
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\bin\Debug\Server.exe
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\bin\Debug\Server.pdb
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.Server.resources
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.exe
+C:\Users\ilyab\Desktop\chat-app-master\src\Server\Server\obj\Debug\Server.pdb
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\bin\Debug\Server.exe.config
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\bin\Debug\Server.exe
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\bin\Debug\Server.pdb
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.Server.resources
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.exe
+C:\Users\ilyab\Desktop\chat-app-master — копия\src\Server\Server\obj\Debug\Server.pdb

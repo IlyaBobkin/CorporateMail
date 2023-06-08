@@ -1,0 +1,13 @@
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\bin\Debug\kurs4sem.exe.config
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\bin\Debug\kurs4sem.exe
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\bin\Debug\kurs4sem.pdb
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.csproj.AssemblyReference.cache
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.csproj.SuggestedBindingRedirects.cache
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.MainForm.resources
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.Properties.Resources.resources
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.csproj.GenerateResource.cache
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.csproj.CoreCompileInputs.cache
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.exe
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.pdb
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.LoginForm.resources
+C:\Users\ilyab\Desktop\kurs4sem\kurs4sem\obj\Debug\kurs4sem.MailForm.resources
