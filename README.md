@@ -53,7 +53,7 @@
   <p><i>Отправление письма</i></p>
 </div>
 
-#### Отправление письма
+#### Получение письма
 <div align="center">
   <img src="https://github.com/user-attachments/assets/168d55d5-3b8b-4f28-a59f-b0143ae927d4" alt="Client Get Email Screenshot" width="70%"/>
   <p><i>Получение письма</i></p>
